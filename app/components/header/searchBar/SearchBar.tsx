@@ -1,11 +1,15 @@
+import styles from "./styles.module.css";
+
 type SearchBarProps = {
-    searchText?: string,
-}
+  searchText?: string;
+};
 
 const SearchBar = (props: SearchBarProps) => {
-  const DEFAULT_SEARCH_TEXT = "default: type in an address";
+  const DEFAULT_SEARCH_TEXT = "type in an address";
   return (
-   <div>This will be the SearchBar :D with text: {props.searchText ? props.searchText : DEFAULT_SEARCH_TEXT}</div>
+    <div className={styles.searchBar}>
+      {props.searchText ? props.searchText : DEFAULT_SEARCH_TEXT}
+    </div>
   );
 };
 

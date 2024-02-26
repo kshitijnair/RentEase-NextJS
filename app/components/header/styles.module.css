@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+    .headerWrapper {
+        @apply flex justify-center;
+    }
+}

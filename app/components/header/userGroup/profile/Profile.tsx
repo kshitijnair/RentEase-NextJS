@@ -1,9 +1,13 @@
-import profilePic from "../../../../../public/profile.png"
+import styles from './styles.module.css';
 
-const Profile = () => {
+type ProfileProps = {
+  src : string
+}
+
+const Profile = (props: ProfileProps) => {
   return (
-    <div className="profileImageContainer">
-        <img className="profileImage" src={profilePic.src} alt="Joanna's Profile Image" />
+    <div className={styles.profileImageContainer}>
+        <img className={styles.profileImage} src={props.src} alt="Joanna's Profile Image" />
     </div>
   )
 }
