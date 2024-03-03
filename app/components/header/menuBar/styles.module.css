@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+    .menuBarContainer {
+        @apply m-auto w-1/4 h-10 rounded-3xl;
+        background: rgb(195,237,176);
+        background: linear-gradient(90deg, rgba(195,237,176,1) 21%, rgba(226,237,176,1) 100%);
+    }
+    .menuBar{
+        @apply flex justify-around p-2;
+    }
+    .menuItem {
+        @apply m-auto text-sm cursor-pointer;
+    }
+}
