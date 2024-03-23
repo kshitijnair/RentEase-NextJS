@@ -7,14 +7,13 @@ const MenuBar = () => {
       <ul className={styles.menuBar}>
         {/* <li className={styles.menuItem}>Home</li> */}
         <li className={styles.menuItem}>
-          <Link href={`/users`} />
-          Messages
+          <Link href={`/users`}>Mesages</Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href={`/users`} />
-          Map
+          <Link href={`/users`}>Map</Link>
         </li>
-        <li className={styles.menuItem}>Settings</li>
+        <li className={styles.menuItem}>
+          <Link href={'/users'}>Settings</Link></li>
       </ul>
     </div>
   );
