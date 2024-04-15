@@ -1,0 +1,22 @@
+@tailwind components;
+
+@layer components {
+    .button {
+        @apply bg-blue-500 text-white font-bold mx-2 py-2 px-4 rounded;
+    }
+
+    .button:hover {
+        @apply bg-blue-700;
+    }
+
+    .input {
+        @apply border border-gray-400 rounded p-2 my-2;
+    }
+
+    .authCard {
+        .container {
+            @apply flex flex-col items-center justify-center mx-auto;
+            margin: 0;
+        }
+    }
+}
